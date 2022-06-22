@@ -1,0 +1,135 @@
+nav {
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 1px;
+}
+
+.text-main {
+    color: rgb(255, 255, 255);
+}
+
+.bdrs-10 {
+    border-radius: 10px;
+}
+
+.my-6 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+h3 {
+    color: #000;
+    font-size: 25px;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-decoration: underline;
+    line-height: 2;
+    letter-spacing: 1px
+}
+
+h4 {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 1px
+}
+
+h6 {
+    color: gray;
+    font-size: 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+button {
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+/***最新消息***/
+/***滑鼠移過圖片會放大***/
+.box-wrap:hover .img-wrap img {
+    transform: scale(1.4);
+}
+
+.img-wrap{
+    overflow: hidden;
+}
+
+.box-wrap .img-wrap img{
+    transition: all .3s;
+}
+
+/***景點推薦***/
+.border {
+    margin-top: 15px;
+}
+
+/***開場loading動畫***/
+body {
+    margin: 0;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2px;
+}
+
+/***滑鼠***/
+.cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border-radius: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    pointer-events: none;
+    animation: color 3s infinite;
+}
+
+@keyframes color {
+    from {
+        background: rgb(0, 0, 0);
+    }
+
+    30% {
+        background: rgb(63, 63, 63);
+    }
+
+    70% {
+        background: rgb(133, 133, 133);
+    }
+
+    100% {
+        background: rgb(189, 189, 189);
+    }
+}
+
+/***旅遊資訊的連結***/
+a{ 
+    text-decoration:none;
+    color: rgb(40, 169, 94);
+} 
+a:hover{
+     text-decoration:underline;
+     color: rgb(0, 153, 255);
+    }
