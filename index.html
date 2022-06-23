@@ -237,7 +237,9 @@
                 <div class="row g-3">
                     <div class="col text-center">
                         <div class="border rounded-3 p-3">
-                            <a href="https://www.railway.gov.tw/tra-tip-web/tip"><h5><b>臺灣鐵路</b></h5></a>
+                            <a href="https://www.railway.gov.tw/tra-tip-web/tip">
+                                <h5><b>臺灣鐵路</b></h5>
+                            </a>
                             <div class="img">
                                 <img src="icon1.png" alt="" width="50%">
                             </div>
@@ -245,7 +247,9 @@
                     </div>
                     <div class="col text-center">
                         <div class="border rounded-3 p-3">
-                            <a href="https://www.thsrc.com.tw/ArticleContent/55ec2deb-342e-4bac-bb0c-02fecfae7273"><h5><b>臺灣高鐵</b></h5></a>
+                            <a href="https://www.thsrc.com.tw/ArticleContent/55ec2deb-342e-4bac-bb0c-02fecfae7273">
+                                <h5><b>臺灣高鐵</b></h5>
+                            </a>
                             <div class="img">
                                 <img src="icon2.png" alt="" width="50%">
                             </div>
@@ -254,13 +258,17 @@
                     <div class="w-100 d-block d-md-none"></div>
                     <div class="col text-center">
                         <div class="border rounded-3 p-3">
-                            <a href="https://www.taiwanbus.tw/"><h5><b>客運及公車</b></h5></a>
+                            <a href="https://www.taiwanbus.tw/">
+                                <h5><b>客運及公車</b></h5>
+                            </a>
                             <img src="icon3.png" alt="" width="50%">
                         </div>
                     </div>
                     <div class="col text-center">
                         <div class="border rounded-3 p-3">
-                            <a href="https://www.metro.taipei/"><h5><b>捷運</b></h5></a>
+                            <a href="https://www.metro.taipei/">
+                                <h5><b>捷運</b></h5>
+                            </a>
                             <img src="icon4.png" alt="" width="50%">
                         </div>
                     </div>
@@ -268,41 +276,88 @@
             </div>
         </div>
 
-        <!--結尾-->
-        <div class="container-fluid bg-dark text-white p-5">
-            <div class="row">
-                <div class="col text-center">
-                    <h4><strong> Have a nice day! :)</strong></h4>
+        <!--聯絡我們-->
+        <div class="container-fluid bg-dark text-white p-4">
+            <h2 class="text-center my-3">聯絡我們</h2>
+            <div class="row p-2">
+                <div class="col-md-6">
+                    <div class="contactus text-center">
+                        <h6>為提供更完善的服務，<br>
+                            您的寶貴意見將會是作為我們提升網站品質之參考。
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-7 py-3">
+                            <label for="name" class="form-label">名稱*</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                        <div class="col-5 py-3">
+                            <label for="sex" class="form-label">性別*</label><br>
+                            <input type="radio" name="sex" id="male" class="form-check-input">男
+                            <input type="radio" name="sex" id="female" class="form-check-input">女
+                        </div>
+                        <div class="col-10 py-3">
+                            <label for="Email" class="form-label">電子郵件*</label>
+                            <input type="text" name="Email" id="Email" class="form-control">
+                        </div>
+                        <div class="col-7 py-3">
+                            <label for="subject" class="form-label">主旨*</label>
+                            <input type="text" name="subject" id="subject" class="form-control">
+                        </div>
+                        <div class="col-10 py-3">
+                            <label for="opinion" class="form-label">您的意見*</label>
+                            <input type="text" name="opinion" id="opinion" class="form-control">
+                        </div>
+                        <div class="col-10 py-3 border-bottom">
+                            <input type="checkbox" name="apply" id="apply" class="form-control-input">
+                            <label for="apply" class="form-label">我同意條款</label>
+                        </div>
+                        <div class="col-10 py-3">
+                            <input type="submit" value="送出" class="btn btn-primary btn-lg w-100">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-
-        <div class="cursor"></div>
-        <div class="loading">
-            <div>Loading...</div>
+    <!--結尾-->
+    <div class="container-fluid bg-dark text-white p-5">
+        <div class="row">
+            <div class="col text-center">
+                <h4><strong> Have a nice day! :)</strong></h4>
+            </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script>
-            $(window).on('load', function () {
-                $('.loading').fadeOut(4000);
-            });
+    </div>
 
 
-            $(document).on("mousemove", function (t) {
-                var o = t.clientX,
-                    n = t.clientY;
-                $(".cursor").css({
-                    top: n,
-                    left: o
-                })
-            });
+    <div class="cursor"></div>
+    <div class="loading">
+        <div>Loading...</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).on('load', function () {
+            $('.loading').fadeOut(4000);
+        });
 
 
-        </script>
+        $(document).on("mousemove", function (t) {
+            var o = t.clientX,
+                n = t.clientY;
+            $(".cursor").css({
+                top: n,
+                left: o
+            })
+        });
+
+
+    </script>
 
 </body>
 

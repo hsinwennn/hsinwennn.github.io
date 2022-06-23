@@ -3,6 +3,11 @@ nav {
     letter-spacing: 1px;
 }
 
+.carousel-inner {
+    position: relative;
+}
+
+
 .text-main {
     color: rgb(255, 255, 255);
 }
@@ -60,11 +65,11 @@ button {
     transform: scale(1.4);
 }
 
-.img-wrap{
+.img-wrap {
     overflow: hidden;
 }
 
-.box-wrap .img-wrap img{
+.box-wrap .img-wrap img {
     transition: all .3s;
 }
 
@@ -125,11 +130,17 @@ body {
 }
 
 /***旅遊資訊的連結***/
-a{ 
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: rgb(40, 169, 94);
-} 
-a:hover{
-     text-decoration:underline;
-     color: rgb(0, 153, 255);
-    }
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 153, 255);
+}
+
+.contactus {
+    margin-top: 250px;
+}
+
